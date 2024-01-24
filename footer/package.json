@@ -1,0 +1,33 @@
+{
+  "name": "footer",
+  "description": "",
+  "version": "1.0.0",
+  "oc": {
+    "files": {
+      "data": "server.js",
+      "static": [
+        "img"
+      ],
+      "template": {
+        "src": "template.jade",
+        "type": "oc-template-jade"
+      }
+    },
+    "parameters": {
+      "name": {
+        "default": "nusrat , this is a footer section",
+        "description": "my name is nusrat",
+        "example": "front end  dev",
+        "mandatory": false,
+        "type": "string"
+      }
+    }
+  },
+  "devDependencies": {
+    "oc-template-jade-compiler": "7.3.1"
+  },
+  "scripts": {
+    "start": "oc dev .. --components footer",
+    "build": "oc package ."
+  }
+}
